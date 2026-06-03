@@ -616,7 +616,7 @@ function navigate(input, replaceHistory = false) {
   if (/^https?:\/\//i.test(input) || /^[a-zA-Z0-9-]+\.[a-zA-Z]{2,}/.test(input)) {
     targetUrl = /^https?:\/\//i.test(input) ? input : 'https://' + input;
   } else {
-    targetUrl = `https://www.google.com/search?q=${encodeURIComponent(input)}`;
+    targetUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(input)}`;
   }
 
   const proxyTarget = `/proxy?url=${encodeURIComponent(targetUrl)}`;
